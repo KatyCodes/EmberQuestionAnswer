@@ -10,5 +10,12 @@
     "author": "Violet Beauregarde",
     "content": "Why can't I do this?",
     "note": "Apartment"
-  }]
-}
+    }],
+   "answers": [{
+     "author": "Andrea",
+     "content": "This is a great question"
+   }, {
+     "author": "Alex",
+     "content": "Heres what I think"
+   }]
+ }
