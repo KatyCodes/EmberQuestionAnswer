@@ -1,5 +1,6 @@
 {{#if addNewQuestion}}
-  <h2>Have a question? Post it here for answers:</h2>
+  <hr>
+  <h4>New Question:</h4>
   <div>
     <form>
       <div class="form-group">
@@ -15,8 +16,8 @@
         {{input value=note id="note"}}
       </div>
     </form>
-    <button {{action 'saveQuestion1'}}>Save</button>
+    <button class="btn" {{action 'saveQuestion1'}}>Save</button>
   </div>
   {{else}}
-    <button {{action 'questionFormShow'}}>New ?</button>
+    <button class="btn" {{action 'questionFormShow'}}>Find the answer here.</button>
   {{/if}}

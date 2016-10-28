@@ -10,9 +10,9 @@
      <label for="author">Your name:</label>
      {{input value=author id="author"}}
    </div>
-   <button {{action 'saveAnswer'}}>Save</button>
+   <button class="btn"{{action 'saveAnswer'}}>Save</button>
  </form>
 </div>
 {{else}}
-  <button {{action 'answerFormShow'}}>Add your answer.</button>
+  <button class="btn"{{action 'answerFormShow'}}>Add your answer.</button>
 {{/if}}
