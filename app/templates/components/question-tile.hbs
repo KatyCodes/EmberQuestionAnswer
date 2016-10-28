@@ -1,5 +1,7 @@
 <div class="well">
-  <li>Question: {{question.content}} <br>
+  <li>
+    {{#link-to 'question' question.id}}
+    Question: {{question.content}} {{/link-to}}<br>
     by: {{question.author}} <br>
     notes: {{question.note}}
   </li>
