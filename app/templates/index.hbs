@@ -9,6 +9,9 @@
 
 <ul>
   {{#each model.answers as |answer|}}
-  <li>{{answer.author}}{{answer.content}}</li>
+  <h4>Answers:</h4>
+  <li>{{answer.content}} By: {{answer.author}}</li>
   {{/each}}
 </ul>
+
+{{new-answer saveAnswer="saveAnswer"}}

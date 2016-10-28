@@ -13,8 +13,8 @@ export default Ember.Route.extend({
       var newQuestion = this.store.createRecord('question', params);
       newQuestion.save();
       this.transitionTo('index');
-    }
-  },
+    },
+    
     update(question, params) {
       Object.keys(params).forEach(function(key) {
     if(params[key]!==undefined) {
@@ -23,6 +23,12 @@ export default Ember.Route.extend({
       });
       question.save();
       this.transitionTo('index');
-},
+  },
 
+    saveAnswer(params) {
+     var newAnswer = this.store.createRecord('answer', params);
+     newAnswer.save();
+     this.transitionTo('index');
+   }
+  }
 });
