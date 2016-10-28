@@ -1,0 +1,10 @@
+<h2>Inquirosity a site for curious minds</h2>
+
+<ul>
+  {{#each model as |question|}}
+    <li>Question: {{question.content}} <br>
+      by: {{question.author}} <br>
+      notes: {{question.note}}
+    </li>
+  {{/each}}
+</ul>
