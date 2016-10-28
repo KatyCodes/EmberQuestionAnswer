@@ -1,1 +1,8 @@
-<li>{{answer.content}}, by: {{answer.author}}</li>
+<h2>Answers:</h2>
+<ul>
+  {{#each question.answers as |answer|}}
+   <h4><u>Answer</u>: {{answer.content}}
+     <br> by: {{answer.author}}</h4>
+     <hr>
+  {{/each}}
+</ul>

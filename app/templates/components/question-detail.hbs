@@ -1,13 +1,5 @@
-
-<h1>{{question.content}}</h1>
-<h3>by:{{question.author}}</h3>
-<h3>Additional information: {{question.note}}</h3>
-<hr>
-{{#link-to 'index'}}Home{{/link-to}}
-
-<h2>Answers:</h2>
-<ul>
-  {{#each question.answers as |answer|}}
-   {{answer-tile answer=answer}}
-  {{/each}}
-</ul>
+<div class="well">
+  <h1>{{question.content}}</h1>
+  <h3>by:{{question.author}}</h3>
+  <h3>Additional information: {{question.note}}</h3>
+</div>
