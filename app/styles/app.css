@@ -25,6 +25,7 @@ h1, h2  {
 .jumbotron h1 {
   color: #f69256 !important;
   text-shadow: -1px -1px 1px #0059FF;
+  font-size: 7em;
 }
 
 .btn {
