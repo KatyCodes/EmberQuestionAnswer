@@ -1,8 +1,8 @@
 <div class="well">
   <li>
-    {{question-popularity question}}
     {{#link-to 'question' question.id}}
-    Question: {{question.content}} {{/link-to}}<br>
-    by: {{question.author}} <br>
+    <h2>{{question-popularity question}} Question: {{question.content}}</h2>{{/link-to}}
+    <h4>by: {{question.author}} </h4>
+    <button {{action 'add' question}}>Add to favorites</button>
   </li>
 </div>
