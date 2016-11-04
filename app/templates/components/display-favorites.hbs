@@ -1,4 +1,4 @@
-{{#each favorites.questions as |question|}}
-  {{question.author}} -- {{question.content}}
-  <h1>hello</h1>
-{{/each}}
+
+  {{#each saveQuestion.questions as |question|}}
+    <li>{{question.content}} is one of your favorites.</li>
+  {{/each}}

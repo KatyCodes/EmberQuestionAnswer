@@ -3,6 +3,6 @@
     {{#link-to 'question' question.id}}
     <h2>{{question-popularity question}} Question: {{question.content}}</h2>{{/link-to}}
     <h4>by: {{question.author}} </h4>
-    <button {{action 'add' question}}>Add to favorites</button>
+    <button {{action 'addToFavorites' question}}>Add to favorites</button>
   </li>
 </div>

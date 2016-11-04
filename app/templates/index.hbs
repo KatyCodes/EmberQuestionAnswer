@@ -5,9 +5,8 @@
     </h4>
     {{new-question saveQuestion2="saveQuestion3"}}
   </div>
-  {{display-favorites}}
 </div>
-
+{{display-favorites question=question}}
 <ul>
   {{#each model.questions as |question|}}
     {{question-tile question=question}}

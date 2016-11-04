@@ -4,6 +4,6 @@ export default Ember.Service.extend({
   questions: [],
 
   add(question) {
-    this.get('questions').pushObject(question);
+    this.get('questions').push(question);
   }
 });

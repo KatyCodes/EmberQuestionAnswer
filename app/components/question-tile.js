@@ -2,9 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   saveQuestion: Ember.inject.service(),
+
   actions: {
-    add(question) {
+    addToFavorites(question) {
       this.get('saveQuestion').add(question);
-    }
+    },
   }
 });
