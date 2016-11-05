@@ -5,10 +5,7 @@ body {
 
 footer {
   color: white;
-  border: 2px solid white;
-  margin-left: 70px;
-  padding-left: 150px;
-  margin-bottom: 20px;
+  text-align: center;
 }
 
 h1, h2  {

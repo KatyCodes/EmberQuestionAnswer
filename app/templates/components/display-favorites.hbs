@@ -1,4 +1,6 @@
-
+<h2>Saved favorites:</h2>
+<ol>
   {{#each saveQuestion.questions as |question|}}
-    <li>{{question.content}} is one of your favorites.</li>
+    {{#link-to 'question' question.id}}<h4>- {{question.content}} is one of your favorites.</h4>{{/link-to}}
   {{/each}}
+</ol>
